@@ -1,0 +1,28 @@
+@media screen and (max-width:578px) {
+    .hero .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header{
+        justify-content: space-between;
+    }
+    header .hamburger{
+        margin-left: auto;
+    }
+    .hamburger.active>:nth-child(1){
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+    .hamburger.active>:nth-child(2){
+        display: none;
+    }
+    .hamburger.active>:nth-child(3){
+        transform: rotate(-50deg);
+        position: relative;
+        top: -2px;
+    }
+}
